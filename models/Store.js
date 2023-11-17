@@ -1,0 +1,35 @@
+import mongoose from "mongoose";
+
+const storeSchema = mongoose.Schema({
+  domain: { tpye: String },
+  average_product_price: { tpye: String },
+  categories: { type: String },
+  combined_followers: { type: Number },
+  country_code: { tpye: String },
+  created: { tpye: String },
+  currency: { tpye: String },
+  estimated_monthly_pageviews: { tpye: Number },
+  estimated_monthly_sales: { type: String },
+  estimated_monthly_visits: { tpye: Number },
+  facebook: { type: String },
+  facebook_followers: { type: Number },
+  favicon_url: { type: String },
+  instagram: { type: String },
+  instagram_followers: { type: Number },
+  maximum_product_price: { type: String },
+  merchant_name: { type: String },
+  meta_description: { type: String },
+  minimum_product_price: { type: String },
+  platform_rank: { type: Number },
+  products_sold: { type: Number },
+  region: { type: String },
+  status: { type: String },
+  theme: { type: String },
+  tiktok: { type: String },
+  tiktok_followers: { type: Number },
+  tiktok_followers_30d: { type: Number },
+  tiktok_followers_90d: { type: Number },
+  title: { type: String },
+});
+
+export const Stores = mongoose.models.Stores;
